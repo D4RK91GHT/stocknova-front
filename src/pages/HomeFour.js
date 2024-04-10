@@ -1,7 +1,7 @@
 import React from "react";
 import AboutAreaFour from "../components/AboutAreaFour";
 import BannerFour from "../components/BannerFour";
-import BlogAreaFour from "../components/BlogAreaFour";
+// import BlogAreaFour from "../components/BlogAreaFour";
 import BrandAreaOne from "../components/BrandAreaOne";
 import CareerAreaOne from "../components/CareerAreaOne";
 import ContactAreaFour from "../components/ContactAreaFour";
@@ -51,7 +51,7 @@ const HomeFour = () => {
       <CounterAreaFour />
 
       {/* Blog Area Four */}
-      <BlogAreaFour />
+      {/* <BlogAreaFour /> */}
 
       {/* Brand Area One */}
       <BrandAreaOne />

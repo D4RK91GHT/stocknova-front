@@ -2,7 +2,7 @@ import React from "react";
 import AboutAreaFive from "../components/AboutAreaFive";
 import AboutAreaSix from "../components/AboutAreaSix";
 import BannerFive from "../components/BannerFive";
-import BlogAreaFive from "../components/BlogAreaFive";
+// import BlogAreaFive from "../components/BlogAreaFive";
 import CaseStudyAreaTwo from "../components/CaseStudyAreaTwo";
 import FooterFour from "../components/FooterFour";
 import NavbarFour from "../components/NavbarFour";
@@ -42,7 +42,7 @@ const HomeFive = () => {
       <TestimonialFive />
 
       {/* Blog Area Five */}
-      <BlogAreaFive />
+      {/* <BlogAreaFive /> */}
 
       {/* Footer Four */}
       <FooterFour />

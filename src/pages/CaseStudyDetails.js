@@ -1,5 +1,5 @@
 import React from "react";
-import Breadcrumb from "../components/Breadcrumb";
+// import Breadcrumb from "../components/Breadcrumb";
 import CaseStudyArea from "../components/CaseStudyArea";
 import FooterOne from "../components/FooterOne";
 import NavBar from "../components/NavBar";
@@ -11,7 +11,7 @@ const CaseStudyDetails = () => {
       <NavBar />
 
       {/* Navigation Bar */}
-      <Breadcrumb title={"Case Study Details"} />
+      {/* <Breadcrumb title={"Case Study Details"} /> */}
 
       {/* Case Study Area */}
       <CaseStudyArea />

@@ -1,6 +1,6 @@
 import React from "react";
 import AboutAreaOne from "../components/AboutAreaOne";
-import Breadcrumb from "../components/Breadcrumb";
+// import Breadcrumb from "../components/Breadcrumb";
 import ContactAreaOne from "../components/ContactAreaOne";
 import CounterAreaOne from "../components/CounterAreaOne";
 import FaqAreaOne from "../components/FaqAreaOne";
@@ -16,7 +16,7 @@ const About = () => {
       <NavBar />
 
       {/* Navigation Bar */}
-      <Breadcrumb title={"About Us"} />
+      {/* <Breadcrumb title={"About Us"} /> */}
 
       {/* About Area One */}
       <AboutAreaOne />

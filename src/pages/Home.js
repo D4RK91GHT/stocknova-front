@@ -7,13 +7,15 @@ import CounterAreaTwo from "../components/CounterAreaTwo";
 import NavbarTwo from "../components/NavbarTwo";
 import PricingAreaTwo from "../components/PricingAreaTwo";
 import ServiceAreaTwo from "../components/ServiceAreaTwo";
+import ServiceAreaFive from "../components/ServiceAreaFive";
+
 import TestimonialOne from "../components/TestimonialOne";
 import WorkProcessTwo from "../components/WorkProcessTwo";
 // import FooterTwo from "../components/FooterTwo";
 import FooterOne from "../components/FooterOne";
 
 
-const HomeTwo = () => {
+const Home = () => {
   return (
     <>
       {/* Navigation Bar Two*/}
@@ -27,6 +29,7 @@ const HomeTwo = () => {
 
       {/* About Area Two */}
       <ServiceAreaTwo />
+      <ServiceAreaFive />
 
       {/* Pricing Area Two */}
       <PricingAreaTwo />
@@ -54,4 +57,4 @@ const HomeTwo = () => {
   );
 };
 
-export default HomeTwo;
+export default Home;

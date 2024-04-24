@@ -5,7 +5,7 @@ import ContactAreaOne from "../components/ContactAreaOne";
 import CounterAreaOne from "../components/CounterAreaOne";
 import FaqAreaOne from "../components/FaqAreaOne";
 import FooterOne from "../components/FooterOne";
-import NavBar from "../components/NavBar";
+import NavbarTwo from "../components/NavbarTwo";
 import TeamAreaOne from "../components/TeamAreaOne";
 import WorkProcessOne from "../components/WorkProcessOne";
 
@@ -13,7 +13,7 @@ const About = () => {
   return (
     <>
       {/* Navigation Bar */}
-      <NavBar />
+      <NavbarTwo />
 
       {/* Navigation Bar */}
       {/* <Breadcrumb title={"About Us"} /> */}

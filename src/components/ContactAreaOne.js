@@ -84,6 +84,49 @@ const ContactAreaOne = () => {
           </div>
         </div>
       </div>
+
+      {/* contact list */}
+      <div className='contact-page-list'>
+        <div className='container'>
+          <div className='row justify-content-center'>
+            <div className='col-lg-4 col-md-6'>
+              <div className='media single-contact-list'>
+                <div className='media-left'>
+                  <img src='assets/img/icon/13.svg' alt='img' />
+                </div>
+                <div className='media-body'>
+                  <h5>Contacts us</h5>
+                  <h6>88 01234 2345 12</h6>
+                </div>
+              </div>
+            </div>
+            <div className='col-lg-4 col-md-6'>
+              <div className='media single-contact-list'>
+                <div className='media-left'>
+                  <img src='assets/img/icon/14.svg' alt='img' />
+                </div>
+                <div className='media-body'>
+                  <h5>Your Email</h5>
+                  <h6>Comism@mail.com</h6>
+                </div>
+              </div>
+            </div>
+            <div className='col-lg-4 col-md-6'>
+              <div className='media single-contact-list'>
+                <div className='media-left'>
+                  <img src='assets/img/icon/15.svg' alt='img' />
+                </div>
+                <div className='media-body'>
+                  <h5>Location</h5>
+                  <h6>99 united,America</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
       {/*========================= contact-inner One end =========================*/}
     </>
   );

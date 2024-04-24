@@ -16,7 +16,7 @@ const FooterOne = () => {
     <>
       {/* ================== Footer One Start ==================*/}
       <footer className='footer-area bg-black bg-cover'>
-        <div className='footer-subscribe'>
+        {/* <div className='footer-subscribe'>
           <div className='container'>
             <div
               className='footer-subscribe-inner bg-cover'
@@ -35,7 +35,7 @@ const FooterOne = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className='container'>
           <div className='row'>
             <div className='col-lg-3 col-md-6'>

@@ -1,10 +1,15 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
 import About from "./pages/About";
 import CaseStudyDetails from "./pages/CaseStudyDetails";
 import Contact from "./pages/Contact";
-import Home from "./pages/Home";
 import Team from "./pages/Team";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
 import TeamDetails from "./pages/TeamDetails";
+
+import Dashboard from "./pages/Dashboard";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -22,6 +27,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route exact path='/' element={<Home />} />
+        <Route exact path='/login' element={<Login />} />
+        <Route exact path='/register' element={<Register />} />
         <Route exact path='/about' element={<About />} />
         <Route
           exact
@@ -31,6 +38,8 @@ function App() {
         <Route exact path='/contact' element={<Contact />} />
         <Route exact path='/team' element={<Team />} />
         <Route exact path='/team-details' element={<TeamDetails />} />
+        <Route exact path='/dashboard' element={<Dashboard />} />
+
       </Routes>
       <ScrollToTop smooth color='#246BFD' />
     </BrowserRouter>

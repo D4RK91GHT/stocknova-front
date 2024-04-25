@@ -1,11 +1,3 @@
-/*
-Theme Name: AgileTech
-Theme URI: http://wowtheme7.com/html/agiletech
-Author: wowtheme7
-Author URI: http://wowtheme7.com
-Description: AglieTech - IT Solutions & Technology Html5 Template
-Version: 1.0.0
-*/
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
@@ -51,6 +43,7 @@ Version: 1.0.0
 //== Sections
 @import "sections/_section-title";
 @import "sections/_navbar";
+@import "sections/_login-register";
 @import "sections/_banner";
 @import "sections/_about";
 @import "sections/_service";

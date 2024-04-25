@@ -25,6 +25,8 @@ const ContactAreaOne = () => {
                 data-aos-duration='1500'
               >
                 <img className='w-100' src='assets/img/bg/4.png' alt='img' />
+                {/* <img className='w-100' src='https://img.freepik.com/free-photo/handshake-close-up-executives_1098-1384.jpg?t=st=1714070012~exp=1714073612~hmac=6e100a701f4181130f7cbff21709b0b6b2b9d8c7657cff197ca02d856cfd6328&w=1380' alt='img' /> */}
+                
               </div>
               <div
                 className='col-lg-4 wow animated fadeInRight'

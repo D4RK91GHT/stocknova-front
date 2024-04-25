@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import { FaPlus, FaSearch } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import React, { useState } from "react"
+import { FaRegUser, FaPlus, FaSearch } from "react-icons/fa"
+import { Link } from "react-router-dom"
 
 const NavbarTwo = () => {
   const [active, setActive] = useState(false);
@@ -117,8 +117,9 @@ const NavbarTwo = () => {
             </ul>
           </div>
           <div className="nav-right-part nav-right-part-desktop align-self-center">
-            <Link className="btn btn-border-base" to="/about">
-              Get Started
+            <Link className="btn btn-small btn-border-base" to="/login">
+              Login
+              <FaRegUser />
             </Link>
           </div>
         </div>

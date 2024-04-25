@@ -1,0 +1,18 @@
+.login-area {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.login-section {
+  position: relative;
+  z-index: 2;
+  .sub-login-section {
+    background: #fff;
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: $box-shadow;
+    .title {
+      font-size: 35px;
+    }
+  }
+}

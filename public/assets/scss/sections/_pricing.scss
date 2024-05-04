@@ -37,17 +37,6 @@
 	.btn {
 		margin-top: 28px;
 	}
-	&.price-active,
-	&:hover {
-		background: #F8F9FC;
-		box-shadow: none;
-		.btn {
-			background: var(--main-color);
-			border-color: var(--main-color);
-			color: #fff !important;
-			line-height: 50px;
-		}
-	}
 	&.style-3 {
 		border: 1px solid #E3E3E3;
 		box-shadow: none;

@@ -1,7 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import CaseStudyDetails from "./pages/CaseStudyDetails";
 import Contact from "./pages/Contact";
 import Team from "./pages/Team";
 import Login from "./pages/Login";
@@ -30,11 +29,6 @@ function App() {
         <Route exact path='/login' element={<Login />} />
         <Route exact path='/register' element={<Register />} />
         <Route exact path='/about' element={<About />} />
-        <Route
-          exact
-          path='/case-study-details'
-          element={<CaseStudyDetails />}
-        />
         <Route exact path='/contact' element={<Contact />} />
         <Route exact path='/team' element={<Team />} />
         <Route exact path='/team-details' element={<TeamDetails />} />

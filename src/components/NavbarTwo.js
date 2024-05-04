@@ -102,9 +102,6 @@ const NavbarTwo = () => {
                   <li>
                     <Link to="/team-details">Team Details</Link>
                   </li>
-                  <li>
-                    <Link to="/case-study-details">Case Study Details</Link>
-                  </li>
                 </ul>
               </li>
               <li>

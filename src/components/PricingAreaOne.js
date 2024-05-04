@@ -55,7 +55,7 @@ const PricingAreaOne = () => {
               </div>
             </div>
             <div className='col-lg-4 col-md-6'>
-              <div className='single-pricing-inner style-3 price-active'>
+              <div className='single-pricing-inner style-3'>
                 <h2 className='mb-3'>
                   $19 <sub>/mo</sub>
                 </h2>

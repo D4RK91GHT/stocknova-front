@@ -2,10 +2,10 @@ import React from "react";
 import NavbarTwo from "../components/NavbarTwo";
 import AboutAreaTwo from "../components/AboutAreaTwo";
 import BannerTwo from "../components/BannerTwo";
-// import BlogAreaTwo from "../components/BlogAreaTwo";
 import ContactAreaTwo from "../components/ContactAreaTwo";
 import CounterAreaTwo from "../components/CounterAreaTwo";
-import PricingAreaTwo from "../components/PricingAreaTwo";
+import PricingAreaOne from "../components/PricingAreaOne";
+
 import ServiceAreaTwo from "../components/ServiceAreaTwo";
 import ServiceAreaFive from "../components/ServiceAreaFive";
 
@@ -14,6 +14,7 @@ import WorkProcessTwo from "../components/WorkProcessTwo";
 // import FooterTwo from "../components/FooterTwo";
 import FooterOne from "../components/FooterOne";
 
+import "../home.scss";
 
 const Home = () => {
   return (
@@ -32,8 +33,7 @@ const Home = () => {
       <ServiceAreaFive />
 
       {/* Pricing Area Two */}
-      <PricingAreaTwo />
-
+      <PricingAreaOne/>
       {/* Counter Area Two */}
       <CounterAreaTwo />
 

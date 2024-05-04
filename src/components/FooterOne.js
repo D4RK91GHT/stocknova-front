@@ -41,7 +41,7 @@ const FooterOne = () => {
             <div className='col-lg-3 col-md-6'>
               <div className='widget widget_about'>
                 <div className='thumb'>
-                  <img src='assets/img/logo2.png' alt='img' />
+                  <img src='assets/img/stocknova.png' alt='img' />
                 </div>
                 <div className='details'>
                   <p>

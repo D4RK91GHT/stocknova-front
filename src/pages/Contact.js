@@ -4,6 +4,8 @@ import ContactAreaOne from "../components/ContactAreaOne";
 import FooterOne from "../components/FooterOne";
 import NavbarTwo from "../components/NavbarTwo";
 
+import "../home.scss";
+
 const Contact = () => {
   return (
     <>

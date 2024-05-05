@@ -504,27 +504,6 @@ const Dashboard = () => {
       <DashboardNavbar onSkin={setSkin} />
       <Sidebar/>
       <div className="main main-app p-3 p-lg-4">
-        <div className="d-md-flex align-items-center justify-content-between mb-4">
-          <div>
-            <ol className="breadcrumb fs-sm mb-1">
-              <li className="breadcrumb-item"><Link to="#">Dashboard</Link></li>
-              <li className="breadcrumb-item active" aria-current="page">Finance Monitoring</li>
-            </ol>
-            <h4 className="main-title mb-0">Welcome to Dashboard</h4>
-          </div>
-          <div className="d-flex gap-2 mt-3 mt-md-0">
-            <Button variant="" className="btn-white d-flex align-items-center gap-2">
-              <i className="ri-share-line fs-18 lh-1"></i>Share
-            </Button>
-            <Button variant="" className="btn-white d-flex align-items-center gap-2">
-              <i className="ri-printer-line fs-18 lh-1"></i>Print
-            </Button>
-            <Button variant="primary" className="d-flex align-items-center gap-2">
-              <i className="ri-bar-chart-2-line fs-18 lh-1"></i>Generate<span className="d-none d-sm-inline"> Report</span>
-            </Button>
-          </div>
-        </div>
-
         <Row className="g-3">
           <Col xl="9">
             <Card className="card-one">

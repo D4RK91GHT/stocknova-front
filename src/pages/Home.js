@@ -13,7 +13,6 @@ import WorkProcessTwo from "../components/WorkProcessTwo";
 import FaqAreaOne from "../components/FaqAreaOne";
 import FooterOne from "../components/FooterOne";
 
-import "../home.scss";
 
 const Home = () => {
   return (

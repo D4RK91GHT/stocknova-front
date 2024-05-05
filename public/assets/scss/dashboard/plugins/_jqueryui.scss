@@ -191,7 +191,7 @@
   button {
     @extend .btn;
     @extend .btn-secondary;
-    @extend .btn-sm;
+    // @extend .btn-sm;
 
     min-height: inherit;
     @include border-radius();

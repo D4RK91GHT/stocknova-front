@@ -2,7 +2,7 @@
 
 .main {
   min-height: 100vh;
-  margin-top: $height-header;
+  margin-top: $db-height-header;
   @include transition(all 0.25s);
 
   @include media-breakpoint-up(lg) {
@@ -14,7 +14,7 @@
 }
 
 .main-app {
-  margin-top: $height-header;
+  margin-top: $db-height-header;
 }
 
 .main-title-label {
@@ -59,7 +59,7 @@
   top: 0;
   left: 0;
   right: 0;
-  height: $height-header;
+  height: $db-height-header;
   padding: 0 23px;
   display: flex;
   align-items: center;

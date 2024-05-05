@@ -1,5 +1,5 @@
 .header {
-  height: $height-header;
+  height: $db-height-header;
 
   .container {
     padding-left: 20px;
@@ -59,7 +59,7 @@
 }
 
 .header-main {
-  height: $height-header;
+  height: $db-height-header;
   position: fixed;
   top: 0;
   left: 0;

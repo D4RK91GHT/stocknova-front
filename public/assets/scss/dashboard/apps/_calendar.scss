@@ -49,8 +49,8 @@
 
 .main-calendar {
   min-height: inherit;
-  height: calc(100vh - #{$height-header});
-  margin-top: $height-header;
+  height: calc(100vh - #{$db-height-header});
+  margin-top: $db-height-header;
   position: relative;
 
   &.show {

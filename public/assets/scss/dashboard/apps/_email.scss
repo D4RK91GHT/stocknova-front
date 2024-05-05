@@ -1,8 +1,8 @@
 
 .main-email {
   min-height: 0;
-  height: calc(100vh - #{$height-header});
-  margin-top: $height-header;
+  height: calc(100vh - #{$db-height-header});
+  margin-top: $db-height-header;
   position: relative;
 
   &.show {

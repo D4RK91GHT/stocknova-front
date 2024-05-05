@@ -119,7 +119,7 @@
 
 .sidebar-header {
   padding: 0 20px;
-  height: $height-header;
+  height: $db-height-header;
   display: flex;
   align-items: center;
   border-bottom: 1px solid $gray-200;
@@ -130,7 +130,7 @@
 }
 
 .sidebar-body {
-  height: calc(100% - #{$height-header + 64px});
+  height: calc(100% - #{$db-height-header + 64px});
   position: relative;
 
   .nav-group {

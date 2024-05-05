@@ -4,7 +4,7 @@
 .page-app {
   .main-app {
     min-height: 0;
-    height: calc(100vh - #{$height-header});
+    height: calc(100vh - #{$db-height-header});
   }
 
   .main-footer {

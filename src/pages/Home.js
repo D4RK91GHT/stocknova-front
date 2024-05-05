@@ -2,7 +2,6 @@ import React from "react";
 import NavbarTwo from "../components/NavbarTwo";
 import AboutAreaTwo from "../components/AboutAreaTwo";
 import BannerTwo from "../components/BannerTwo";
-import ContactAreaTwo from "../components/ContactAreaTwo";
 import CounterAreaTwo from "../components/CounterAreaTwo";
 import PricingAreaOne from "../components/PricingAreaOne";
 
@@ -11,7 +10,7 @@ import ServiceAreaFive from "../components/ServiceAreaFive";
 
 import TestimonialOne from "../components/TestimonialOne";
 import WorkProcessTwo from "../components/WorkProcessTwo";
-// import FooterTwo from "../components/FooterTwo";
+import FaqAreaOne from "../components/FaqAreaOne";
 import FooterOne from "../components/FooterOne";
 
 import "../home.scss";
@@ -34,11 +33,9 @@ const Home = () => {
 
       {/* Pricing Area Two */}
       <PricingAreaOne/>
+
       {/* Counter Area Two */}
       <CounterAreaTwo />
-
-      {/* Contact Area Two */}
-      <ContactAreaTwo />
 
       {/* Work Process Two */}
       <WorkProcessTwo />
@@ -47,10 +44,9 @@ const Home = () => {
       <TestimonialOne />
 
       {/* Blog Area Two */}
-      {/* <BlogAreaTwo /> */}
-
+      <FaqAreaOne />
+      
       {/* Footer Two */}
-      {/* <FooterTwo /> */}
       <FooterOne />
 
     </>

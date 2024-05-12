@@ -82,31 +82,6 @@ export default class Sidebar extends Component {
                 <PerfectScrollbar className="sidebar-body" ref={ref => this._scrollBarRef = ref}>
                     <SidebarMenu onUpdateSize={() => this._scrollBarRef.updateScroll()} />
                 </PerfectScrollbar>
-                <div className="sidebar-footer">
-                    <div className="sidebar-footer-top">
-                        <div className="sidebar-footer-thumb">
-                            <img src="assets/img/img1.jpg" alt="" />
-                        </div>
-                        <div className="sidebar-footer-body">
-                            <h6><Link to="../pages/profile.html">Shaira Diaz</Link></h6>
-                            <p>Premium Member</p>
-                        </div>
-                        <Link onClick={this.toggleFooterMenu} to="" className="dropdown-link"><i className="ri-arrow-down-s-line"></i></Link>
-                    </div>
-                    <div className="sidebar-footer-menu">
-                        <nav className="nav">
-                            <Link to=""><i className="ri-edit-2-line"></i> Edit Profile</Link>
-                            <Link to=""><i className="ri-profile-line"></i> View Profile</Link>
-                        </nav>
-                        <hr />
-                        <nav className="nav">
-                            <Link to=""><i className="ri-question-line"></i> Help Center</Link>
-                            <Link to=""><i className="ri-lock-line"></i> Privacy Settings</Link>
-                            <Link to=""><i className="ri-user-settings-line"></i> Account Settings</Link>
-                            <Link to=""><i className="ri-logout-box-r-line"></i> Log Out</Link>
-                        </nav>
-                    </div>
-                </div>
             </div>
         )
     }

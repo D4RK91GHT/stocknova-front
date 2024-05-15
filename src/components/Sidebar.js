@@ -1,67 +1,8 @@
-// import React from "react";
-
-// const Sidebar = () => {
-//   return (
-//     <>
-//       <button
-//         class="btn btn-primary"
-//         type="button"
-//         data-bs-toggle="offcanvas"
-//         data-bs-target="#offcanvasScrolling"
-//         aria-controls="offcanvasScrolling"
-//       >
-//         Enable body scrolling
-//       </button>
-
-//       {/* <div
-//         class="offcanvas offcanvas-start"
-//         data-bs-scroll="true"
-//         data-bs-backdrop="false"
-//         tabindex="-1"
-//         id="offcanvasScrolling"
-//         aria-labelledby="offcanvasScrollingLabel"
-//       > */}
-//       <div
-//         div
-//         class="offcanvas offcanvas-start show"
-//         data-bs-scroll="true"
-//         data-bs-backdrop="false"
-//         tabindex="-1"
-//         id="offcanvasScrolling"
-//         aria-labelledby="offcanvasScrollingLabel"
-//         aria-modal="true"
-//         role="dialog"
-//       >
-//         <div class="offcanvas-header">
-//           <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
-//             Offcanvas with body scrolling
-//           </h5>
-//           <button
-//             type="button"
-//             class="btn-close"
-//             data-bs-dismiss="offcanvas"
-//             aria-label="Close"
-//           ></button>
-//         </div>
-//         <div class="offcanvas-body">
-//           <p>
-//             Try scrolling the rest of the page to see this option in action.
-//           </p>
-//         </div>
-//       </div>
-//     </>
-//   );
-// };
-
-// export default Sidebar;
-
 import React, { Component } from "react";
 import { Link, NavLink } from "react-router-dom";
 import PerfectScrollbar from "react-perfect-scrollbar";
 import {
     dashboardMenu,
-    applicationsMenu,
-    pagesMenu,
     uiElementsMenu
 } from "../data/Menu";
 
@@ -152,14 +93,6 @@ class SidebarMenu extends Component {
                 <div className="nav-group show">
                     <div className="nav-label" onClick={this.toggleMenu}>Dashboard</div>
                     {this.populateMenu(dashboardMenu)}
-                </div>
-                <div className="nav-group show">
-                    <div className="nav-label" onClick={this.toggleMenu}>Applications</div>
-                    {this.populateMenu(applicationsMenu)}
-                </div>
-                <div className="nav-group show">
-                    <div className="nav-label" onClick={this.toggleMenu}>Pages</div>
-                    {this.populateMenu(pagesMenu)}
                 </div>
                 <div className="nav-group show">
                     <div className="nav-label" onClick={this.toggleMenu}>UI Elements</div>

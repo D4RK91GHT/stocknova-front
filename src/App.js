@@ -8,6 +8,7 @@ import Register from "./pages/Register";
 import TeamDetails from "./pages/TeamDetails";
 
 import Dashboard from "./pages/Dashboard";
+import Stocks from "./pages/Stocks";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -32,7 +33,9 @@ function App() {
         <Route exact path='/contact' element={<Contact />} />
         <Route exact path='/team' element={<Team />} />
         <Route exact path='/team-details' element={<TeamDetails />} />
+
         <Route exact path='/dashboard' element={<Dashboard />} />
+        <Route exact path='/dashboard/stocks' element={<Stocks />} />
 
       </Routes>
       <ScrollToTop smooth color='#246BFD' />

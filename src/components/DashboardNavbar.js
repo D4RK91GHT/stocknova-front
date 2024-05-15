@@ -1,9 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Dropdown from "react-bootstrap/Dropdown";
-// import userAvatar from "../assets/img/img1.jpg";
-import notification from "../data/Notification";
-import { FaAlignLeft } from "react-icons/fa";
 import { RiMenu2Line, RiSettings3Line, RiSearchLine } from "react-icons/ri";
 
 export default function DashboardNavbar({ onSkin }) {
@@ -34,26 +31,6 @@ export default function DashboardNavbar({ onSkin }) {
       }
     }
   };
-
-  function NotificationList() {
-    const notiList = notification.map((item, key) => {
-      return (
-        <li className="list-group-item" key={key}>
-          <div
-            className={item.status === "online" ? "avatar online" : "avatar"}
-          >
-            {item.avatar}
-          </div>
-          <div className="list-group-body">
-            <p>{item.text}</p>
-            <span>{item.date}</span>
-          </div>
-        </li>
-      );
-    });
-
-    return <ul className="list-group">{notiList}</ul>;
-  }
 
   const skinMode = (e) => {
     e.preventDefault();
@@ -122,7 +99,7 @@ export default function DashboardNavbar({ onSkin }) {
       <Dropdown className="dropdown-skin" align="end">
         <Dropdown.Toggle as={CustomToggle}>
           {/* <i className="ri-settings-3-line"></i> */}
-          <RiSettings3Line/>
+          <RiSettings3Line className="fs-5"/>
         </Dropdown.Toggle>
         <Dropdown.Menu className="mt-10-f">
           <label>Skin Mode</label>
@@ -185,53 +162,6 @@ export default function DashboardNavbar({ onSkin }) {
         </Dropdown.Menu>
       </Dropdown>
 
-      <div class="dropdown dropdown-skin" align="end">
-        <button
-          onclick="toggleDropdown()"
-          class="dropdown-toggle custom-toggle"
-        >
-          {/* <i class="ri-settings-3-line"></i> */}
-          {/* <FaAlignLeft /> */}
-        </button>
-        <div id="dropdownMenu" class="dropdown-menu mt-10-f">
-          <label>Skin Mode</label>
-          <nav class="nav nav-skin">
-            <a onclick="skinMode(this)" class="nav-link active">
-              Light
-            </a>
-            <a onclick="skinMode(this)" class="nav-link">
-              Dark
-            </a>
-          </nav>
-          <hr />
-          <label>Sidebar Skin</label>
-          <nav id="sidebarSkin" class="nav nav-skin">
-            <a onclick="sidebarSkin(this)" class="nav-link active">
-              Default
-            </a>
-            <a onclick="sidebarSkin(this)" class="nav-link">
-              Prime
-            </a>
-            <a onclick="sidebarSkin(this)" class="nav-link">
-              Dark
-            </a>
-          </nav>
-        </div>
-      </div>
-
-      <Dropdown className="dropdown-notification ms-3 ms-xl-4" align="end">
-        <Dropdown.Toggle as={CustomToggle}>
-          <small>3</small><i className="ri-notification-3-line"></i>
-        </Dropdown.Toggle>
-        <Dropdown.Menu className="mt-10-f me--10-f">
-          <div className="dropdown-menu-header">
-            <h6 className="dropdown-menu-title">Notifications</h6>
-          </div>
-          {NotificationList()}
-          <div className="dropdown-menu-footer"><Link to="#">Show all Notifications</Link></div>
-        </Dropdown.Menu>
-      </Dropdown>
-
       <Dropdown className="dropdown-profile ms-3 ms-xl-4" align="end">
         <Dropdown.Toggle as={CustomToggle}>
           <div className="avatar online">
@@ -245,8 +175,8 @@ export default function DashboardNavbar({ onSkin }) {
             <p className="fs-sm text-secondary">Premium Member</p>
 
             <nav className="nav">
-              <Link to=""><i className="ri-edit-2-line"></i> Edit Profile</Link>
-              <Link to=""><i className="ri-profile-line"></i> View Profile</Link>
+              <Link to="/"><i className="ri-edit-2-line"></i> Edit Profile</Link>
+              <Link to="/"><i className="ri-profile-line"></i> View Profile</Link>
             </nav>
             <hr />
             <nav className="nav">

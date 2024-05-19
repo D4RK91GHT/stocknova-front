@@ -43,7 +43,7 @@ class SidebarMenu extends Component {
             return (
                 <li key={key} className="nav-item">
                     {(!sm) ? (
-                        <NavLink to={m.link} className="nav-link"><i className={m.icon}></i> <span>{m.label}</span></NavLink>
+                        <NavLink to={m.link} className="nav-link">{m.icon} <span>{m.label}</span></NavLink>
                     ) : (
                         <div onClick={this.toggleSubMenu} className="nav-link has-sub"><i className={m.icon}></i> <span>{m.label}</span></div>
                     )}

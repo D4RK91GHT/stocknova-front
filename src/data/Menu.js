@@ -6,8 +6,8 @@ const dashboardMenu = [
     "icon": "ri-pie-chart-2-line"
   },
   {
-    "label": "Events Management",
-    "link": "/dashboard/stocks",
+    "label": "Stocks",
+    "link": "/stocks",
     "icon": "ri-calendar-todo-line"
   },
   {

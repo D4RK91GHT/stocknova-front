@@ -18,7 +18,7 @@ export default class Sidebar extends Component {
         return (
             <div className="sidebar">
                 <div className="sidebar-header">
-                    <Link to="/" className="sidebar-logo">dashbyte</Link>
+                    <Link to="/dashboard" className="sidebar-logo">dashbyte</Link>
                 </div>
                 <PerfectScrollbar className="sidebar-body" ref={ref => this._scrollBarRef = ref}>
                     <SidebarMenu onUpdateSize={() => this._scrollBarRef.updateScroll()} />

@@ -35,7 +35,7 @@ function App() {
         <Route exact path='/team-details' element={<TeamDetails />} />
 
         <Route exact path='/dashboard' element={<Dashboard />} />
-        <Route exact path='/dashboard/stocks' element={<Stocks />} />
+        <Route exact path='/stocks' element={<Stocks />} />
 
       </Routes>
       <ScrollToTop smooth color='#246BFD' />

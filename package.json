@@ -13,6 +13,8 @@
     "axios": "^1.6.8",
     "bootstrap": "^5.3.3",
     "cryptofont": "^0.1.1",
+    "gridjs": "^6.2.0",
+    "gridjs-react": "^6.1.1",
     "react": "^18.2.0",
     "react-animated-css": "^1.2.1",
     "react-apexcharts": "^1.4.1",

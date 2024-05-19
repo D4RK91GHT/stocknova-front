@@ -79,13 +79,14 @@ const LoginForm = () => {
         formData
       );
       if (response.status === 200) {
-        if (response.data.status === 1) {
+        console.log(response);
+        if (response.data.status === true) {
           navigate("/dashboard");
         } else {
           setError(response.data.message);
         }
       } else {
-        if (response.data.status === 0) {
+        if (response.data.status === false) {
           setError(response.data.message);
         }
       }

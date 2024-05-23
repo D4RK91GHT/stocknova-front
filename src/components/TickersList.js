@@ -55,7 +55,7 @@ export default function TickersList() {
                     "button",
                     {
                       className: "py-2 px-4 border rounded-md text-white bg-blue",
-                      onClick: () => navigate(`/predictions/${row.cells[4].data}`),
+                      onClick: () => navigate(`/predict/${row.cells[4].data}`),
                     },
                     "View"
                   );

@@ -9,6 +9,8 @@ import TeamDetails from "./pages/TeamDetails";
 
 import Dashboard from "./pages/Dashboard";
 import Stocks from "./pages/Stocks";
+import Predection from "./pages/Predection";
+
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -36,6 +38,8 @@ function App() {
 
         <Route exact path='/dashboard' element={<Dashboard />} />
         <Route exact path='/stocks' element={<Stocks />} />
+        <Route exact path='/predict/:symbol' element={<Predection />} />
+
 
       </Routes>
       <ScrollToTop smooth color='#246BFD' />

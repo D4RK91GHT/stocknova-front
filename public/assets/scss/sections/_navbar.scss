@@ -428,48 +428,9 @@
 
 /**************** nav-right-part *************/
 .nav-right-part {
-  .navbar-phone {
-    height: 80px;
-    color: #fff;
-    border-radius: 0;
-    position: relative;
-    display: inline-block;
-    background: var(--main-color);
-    padding: 11px 25px 11px 85px;
-    .icon {
-      position: absolute;
-      left: 20px;
-      background: rgba(255, 255, 255, 0.1);
-      display: inline-block;
-      height: 50px;
-      width: 50px;
-      line-height: 47px;
-      text-align: center;
-      border-radius: 50%;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-    span {
-      font-weight: 500;
-      color: #fff;
-      display: inline-block;
-      margin-bottom: 2px;
-      font-size: 15px;
-    }
-    h5 {
-      font-size: 16px;
-      font-weight: 600;
-      color: #fff;
-      margin-bottom: 0;
-    }
-  }
   a {
     margin-left: 15px;
     color: var(--heading-color);
-  }
-  .search-bar-btn {
-    margin-top: -22px;
-    cursor: pointer;
   }
   .search-bar {
     &:hover {
@@ -483,63 +444,10 @@
   -ms-flex-align: center;
   align-items: center;
 }
-.navbar-area-2 .nav-right-part .navbar-phone {
-  color: var(--heading-color);
-  background: transparent;
-}
-.navbar-area-2 .nav-right-part .navbar-phone .icon {
-  background: rgba(36, 107, 253, 0.1803921569);
-}
-.navbar-area-2 .nav-right-part .navbar-phone .icon img {
-  -webkit-filter: invert(38%) sepia(100%) saturate(3579%) hue-rotate(212deg)
-    brightness(97%) contrast(105%);
-  filter: invert(38%) sepia(100%) saturate(3579%) hue-rotate(212deg)
-    brightness(97%) contrast(105%);
-}
-.navbar-area-2 .nav-right-part .navbar-phone h5,
-.navbar-area-2 .nav-right-part .navbar-phone span {
-  color: var(--heading-color);
-}
 
-.navbar-area-3 {
-  .nav-container .navbar-collapse .navbar-nav li a {
-    color: #fff;
-  }
-  .nav-container .navbar-collapse .navbar-nav li.menu-item-has-children:before,
-  .nav-container .navbar-collapse .navbar-nav li.menu-item-has-children:after {
-    background: #fff;
-  }
-}
-.navbar-area-3 .navbarFive {
-  li {
-    &:hover {
-      & > a {
-        color: #50af9b !important;
-      }
-    }
-    &:hover:before {
-      background: #50af9b !important;
-    }
-    &:hover::after {
-      background: #50af9b !important;
-    }
-    .sub-menu {
-      li {
-        &:hover {
-          background: #50af9b !important;
-          & > a {
-            color: #fff !important;
-          }
-        }
-      }
-    }
-  }
-}
+
 .nav-right-part-desktop {
   margin-left: 20px;
-}
-.nav-right-part-mobile {
-  display: none;
 }
 
 /**************** sidebar-menu *************/
@@ -987,9 +895,7 @@
     opacity: 0;
     margin-right: -18px;
   }
-  .nav-right-part-mobile {
-    display: block;
-  }
+
   .nav-right-part-desktop {
     display: none;
   }

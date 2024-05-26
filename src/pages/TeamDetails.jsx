@@ -1,13 +1,13 @@
 import React from "react";
 import FooterOne from "../components/FooterOne";
-import NavbarTwo from "../components/NavbarTwo";
+import Navbar from "../components/Navbar";
 import TeamDetailsGroup from "../components/TeamDetailsGroup";
 
 const TeamDetails = () => {
   return (
     <>
       {/* Navigation Bar */}
-      <NavbarTwo />
+      <Navbar />
 
       {/* Team Details Group */}
       <TeamDetailsGroup />

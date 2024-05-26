@@ -1,5 +1,5 @@
 import React from "react";
-import NavbarTwo from "../components/NavbarTwo";
+import Navbar from "../components/Navbar";
 import AboutAreaTwo from "../components/AboutAreaTwo";
 import BannerTwo from "../components/BannerTwo";
 import CounterAreaTwo from "../components/CounterAreaTwo";
@@ -18,7 +18,7 @@ const Home = () => {
   return (
     <>
       {/* Navigation Bar Two*/}
-      <NavbarTwo />
+      <Navbar/>
 
       {/* Banner Two */}
       <BannerTwo />

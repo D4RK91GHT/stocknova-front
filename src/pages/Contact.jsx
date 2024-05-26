@@ -2,14 +2,14 @@ import React from "react";
 import ContactAreaOne from "../components/ContactAreaOne";
 
 import FooterOne from "../components/FooterOne";
-import NavbarTwo from "../components/NavbarTwo";
+import Navbar from "../components/Navbar";
 
 
 const Contact = () => {
   return (
     <>
       {/* Navigation Bar */}
-      <NavbarTwo />
+      <Navbar />
 
       {/* Contact Main */}
       <ContactAreaOne />

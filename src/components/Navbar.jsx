@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { FaRegUser, FaPlus, FaSearch } from "react-icons/fa"
 import { Link } from "react-router-dom"
 
-const NavbarTwo = () => {
+const Navbar = () => {
   const [active, setActive] = useState(false);
   const [searchShow, setSearchShow] = useState(false);
   const menuActive = () => {
@@ -126,4 +126,4 @@ const NavbarTwo = () => {
   );
 };
 
-export default NavbarTwo;
+export default Navbar;

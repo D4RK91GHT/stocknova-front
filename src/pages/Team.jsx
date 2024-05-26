@@ -1,13 +1,13 @@
 import React from "react";
 import FooterOne from "../components/FooterOne";
-import NavbarTwo from "../components/NavbarTwo";
+import Navbar from "../components/Navbar";
 import TeamAreaGroup from "../components/TeamAreaGroup";
 
 const Team = () => {
   return (
     <>
       {/* Navigation Bar */}
-      <NavbarTwo />
+      <Navbar />
 
       {/* Team Area Group */}
       <TeamAreaGroup />

@@ -575,52 +575,6 @@ const Dashboard = () => {
     tooltip: { enabled: false },
   };
 
-  const seriesSix = [
-    {
-      name: "series1",
-      data: dp3,
-    },
-    {
-      name: "series2",
-      data: dp3,
-    },
-  ];
-
-  const optionSix = {
-    chart: {
-      parentHeightOffset: 0,
-      toolbar: {
-        show: false,
-      },
-      stacked: true,
-      sparkline: {
-        enabled: true,
-      },
-    },
-    colors: ["#506fd9", "#85b6ff"],
-    stroke: {
-      curve: "straight",
-      width: [0, 0],
-    },
-    yaxis: {
-      min: 0,
-      max: 60,
-      show: false,
-    },
-    xaxis: {
-      min: 20,
-      max: 30,
-    },
-    fill: {
-      type: "gradient",
-      gradient: {
-        opacityFrom: 0.75,
-        opacityTo: 0.25,
-      },
-    },
-    legend: { show: false },
-    tooltip: { enabled: false },
-  };
 
   const seriesSeven = [
     {
@@ -823,11 +777,6 @@ const Dashboard = () => {
                     <span className="text-primary">38.63%</span>
                     <small>vs last year</small>
                   </h4>
-
-                  <p className="w-50 fs-sm mb-2 mb-xl-4 d-none d-sm-block">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore...
-                  </p>
 
                   <Row className="row-cols-auto g-3 g-xl-4 pt-2">
                     {[

@@ -1,10 +1,9 @@
 /*---------------------------------------
     ## Button
 ---------------------------------------*/
-.btn {
-  height: 55px !important;
-  line-height: 55px !important;
-  padding: 0 30px !important;
+.login-btn {
+  height: 42px !important;
+  padding: 10px 25px !important;
   border-radius: 0;
   overflow: hidden;
   position: relative;
@@ -38,6 +37,57 @@
       width: 135%;
     }
   }
+  svg {
+    font-size: 12px;
+    margin-top: 5px;
+    margin-left: 6px;
+    float: right;
+  }
+}
+
+// =========================================
+
+.sn-btn {
+  height: 42px !important;
+  padding: 10px 30px !important;
+  border-radius: 0;
+  overflow: hidden;
+  position: relative;
+  color: var(--main-color);
+  border: 2px solid var(--main-color) !important;
+  background: transparent;
+  @include transition(all, 0.5s, ease !important);
+  font-weight: 600 !important;
+  border-radius: 30px !important;
+  z-index: 0;
+  &:focus,
+  &:active {
+    color: #fff;
+    background: var(--main-color);
+    outline: 0;
+    box-shadow: none;
+  }
+  &:hover {
+    color: #fff;
+    &:after {
+      height: 100%;
+      width: 135%;
+    }
+  }
+  &:after {
+    content: "";
+    background: var(--main-color);
+    position: absolute;
+    transition: $transition;
+    z-index: -1;
+    height: 100%;
+    left: -35%;
+    top: 0;
+    transform: skew(30deg);
+    transition-duration: 0.6s;
+    transform-origin: top left;
+    width: 0;
+  }
   i {
     font-size: 14px;
     float: right;
@@ -50,20 +100,8 @@
     margin-left: 6px;
     float: right;
   }
-  &.border-radius-0 {
-    border-radius: 0;
-  }
-  &.border-radius-5 {
-    border-radius: 5px;
-  }
 }
-.btn-small {
-  height: 50px;
-  line-height: 50px !important;
-  i {
-    padding-top: 12px;
-  }
-}
+
 .btn-base {
   color: #fff;
   background: var(--main-color);
@@ -87,28 +125,10 @@
     background: var(--main-color);
   }
 }
-.btn-black {
-  color: #fff !important;
-  background: var(--heading-color);
-  &:hover,
-  &:focus {
-    color: #fff !important;
-    background: var(--main-color);
-  }
-}
-.btn-black.sky {
-  color: #fff !important;
-  background: var(--heading-color);
-  &:hover,
-  &:focus {
-    color: #fff !important;
-    background: #50af9b;
-  }
-}
+
 .btn-border-base {
   color: var(--heading-color) !important;
   border: 2px solid var(--main-color) !important;
-  line-height: 52px !important;
   &:after {
     background: var(--main-color) !important;
   }
@@ -461,7 +481,6 @@
     }
   }
 }
-
 
 /********* social-media *********/
 .social-media {
@@ -948,6 +967,9 @@
 }
 .border-radius-5 {
   border-radius: 5px;
+}
+.border-radius-0 {
+  border-radius: 0;
 }
 .color-base {
   color: var(--main-color);

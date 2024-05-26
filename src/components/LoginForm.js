@@ -139,7 +139,7 @@ const LoginForm = () => {
                       <div className="col-12 mb-3">
                         <button
                           type="submit"
-                          className="btn btn-black mt-0 w-100 border-radius-5"
+                          className="sn-btn mt-0 w-100 border-radius-5"
                         >
                           Login
                         </button>

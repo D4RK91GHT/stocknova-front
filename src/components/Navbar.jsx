@@ -82,7 +82,7 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="nav-right-part nav-right-part-desktop align-self-center">
-            <Link className="btn btn-small btn-border-base" to="/login">
+            <Link className="btn login-btn btn-border-base" to="/login">
               Login
               <FaRegUser />
             </Link>

@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Dropdown from "react-bootstrap/Dropdown";
-import { RiMenu2Line, RiSettings3Line, RiSearchLine } from "react-icons/ri";
+import { RiMenu2Line, RiSearchLine } from "react-icons/ri";
 
-export default function DashboardNavbar({ onSkin }) {
+export default function DashboardNavbar() {
   const CustomToggle = React.forwardRef(({ children, onClick }, ref) => (
     <Link
       to=""
@@ -32,56 +32,6 @@ export default function DashboardNavbar({ onSkin }) {
     }
   };
 
-  const skinMode = (e) => {
-    e.preventDefault();
-    e.target.classList.add("active");
-
-    let node = e.target.parentNode.firstChild;
-    while (node) {
-      if (node !== e.target && node.nodeType === Node.ELEMENT_NODE)
-        node.classList.remove("active");
-      node = node.nextElementSibling || node.nextSibling;
-    }
-
-    let skin = e.target.textContent.toLowerCase();
-    let HTMLTag = document.querySelector("html");
-
-    if (skin === "dark") {
-      HTMLTag.setAttribute("data-skin", skin);
-      localStorage.setItem("skin-mode", skin);
-
-      onSkin(skin);
-    } else {
-      HTMLTag.removeAttribute("data-skin");
-      localStorage.removeItem("skin-mode");
-
-      onSkin("");
-    }
-  };
-
-  const sidebarSkin = (e) => {
-    e.preventDefault();
-    e.target.classList.add("active");
-
-    let node = e.target.parentNode.firstChild;
-    while (node) {
-      if (node !== e.target && node.nodeType === Node.ELEMENT_NODE)
-        node.classList.remove("active");
-      node = node.nextElementSibling || node.nextSibling;
-    }
-
-    let skin = e.target.textContent.toLowerCase();
-    let HTMLTag = document.querySelector("html");
-
-    HTMLTag.removeAttribute("data-sidebar");
-
-    if (skin !== "default") {
-      HTMLTag.setAttribute("data-sidebar", skin);
-      localStorage.setItem("sidebar-skin", skin);
-    } else {
-      localStorage.removeItem("sidebar-skin", skin);
-    }
-  };
 
   return (
     <div className="header-main px-3 px-lg-4">
@@ -92,75 +42,8 @@ export default function DashboardNavbar({ onSkin }) {
 
       <div className="form-search me-auto">
         <input type="text" className="form-control" placeholder="Search" />
-        {/* <i className="ri-search-line"></i> */}
         <RiSearchLine />
       </div>
-
-      <Dropdown className="dropdown-skin" align="end">
-        <Dropdown.Toggle as={CustomToggle}>
-          {/* <i className="ri-settings-3-line"></i> */}
-          <RiSettings3Line className="fs-5"/>
-        </Dropdown.Toggle>
-        <Dropdown.Menu className="mt-10-f">
-          <label>Skin Mode</label>
-          <nav className="nav nav-skin">
-            <Link
-              onClick={skinMode}
-              className={
-                localStorage.getItem("skin-mode")
-                  ? "nav-link"
-                  : "nav-link active"
-              }
-            >
-              Light
-            </Link>
-            <Link
-              onClick={skinMode}
-              className={
-                localStorage.getItem("skin-mode")
-                  ? "nav-link active"
-                  : "nav-link"
-              }
-            >
-              Dark
-            </Link>
-          </nav>
-          <hr />
-          <label>Sidebar Skin</label>
-          <nav id="sidebarSkin" className="nav nav-skin">
-            <Link
-              onClick={sidebarSkin}
-              className={
-                !localStorage.getItem("sidebar-skin")
-                  ? "nav-link active"
-                  : "nav-link"
-              }
-            >
-              Default
-            </Link>
-            <Link
-              onClick={sidebarSkin}
-              className={
-                localStorage.getItem("sidebar-skin") === "prime"
-                  ? "nav-link active"
-                  : "nav-link"
-              }
-            >
-              Prime
-            </Link>
-            <Link
-              onClick={sidebarSkin}
-              className={
-                localStorage.getItem("sidebar-skin") === "dark"
-                  ? "nav-link active"
-                  : "nav-link"
-              }
-            >
-              Dark
-            </Link>
-          </nav>
-        </Dropdown.Menu>
-      </Dropdown>
 
       <Dropdown className="dropdown-profile ms-3 ms-xl-4" align="end">
         <Dropdown.Toggle as={CustomToggle}>

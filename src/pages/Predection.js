@@ -202,34 +202,6 @@ const Prediction = () => {
     fetchData(symbol, period);
   }, [symbol, period, fetchData]);
 
-  const currentSkin = localStorage.getItem("skin-mode") ? "dark" : "";
-  const [skin, setSkin] = useState(currentSkin);
-
-  const switchSkin = (skin) => {
-    if (skin === "dark") {
-      const btnWhite = document.getElementsByClassName("btn-white");
-
-      for (const btn of btnWhite) {
-        btn.classList.add("btn-outline-primary");
-        btn.classList.remove("btn-white");
-      }
-    } else {
-      const btnOutlinePrimary = document.getElementsByClassName(
-        "btn-outline-primary"
-      );
-
-      for (const btn of btnOutlinePrimary) {
-        btn.classList.remove("btn-outline-primary");
-        btn.classList.add("btn-white");
-      }
-    }
-  };
-
-  switchSkin(skin);
-
-  useEffect(() => {
-    switchSkin(skin);
-  }, [skin]);
 
   const ChangePredectionPeriod = (event) => {
     const selectedPeriod = event.target.value;
@@ -240,8 +212,8 @@ const Prediction = () => {
 
   return (
     <>
-      <DashboardNavbar onSkin={setSkin} />
-      <Sidebar />
+      <DashboardNavbar/>
+      <Sidebar/>
       <div className="main main-app p-3 p-lg-4">
         <div className="d-flex justify-content-between">
           <h1 className="w-100">Predicting {symbol} for {period} Days</h1>

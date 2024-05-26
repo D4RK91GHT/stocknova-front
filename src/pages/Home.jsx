@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import AboutAreaTwo from "../components/AboutAreaTwo";
-import BannerTwo from "../components/BannerTwo";
+import BannerTwo from "../components/Banner";
 import CounterAreaTwo from "../components/CounterAreaTwo";
 import PricingAreaOne from "../components/PricingAreaOne";
 

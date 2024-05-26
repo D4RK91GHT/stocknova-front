@@ -20,62 +20,6 @@
 .banner-area-2 {
   padding-top: 210px;
   padding-bottom: 70px;
-  .bg-img-2 {
-    position: absolute;
-    right: -100px;
-    top: 0;
-    width: 660px;
-  }
-  .video-play-btn-hover {
-    cursor: pointer;
-  }
-}
-.banner-area-3 {
-  margin-top: 0;
-  .bg-gray {
-    padding: 140px 0;
-    position: relative;
-  }
-  .img-right {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 55%;
-    bottom: 0;
-    height: 100%;
-    z-index: 1;
-  }
-  &:after {
-    content: "";
-    position: absolute;
-    right: 40%;
-    top: 0;
-    width: 20%;
-    height: 100%;
-    background-image: linear-gradient(to right, #f8f9fc 50%, transparent);
-    z-index: 2;
-  }
-}
-
-.navbar-area-2 {
-  .nav-right-part {
-    align-items: center;
-    .navbar-phone {
-      color: var(--heading-color);
-      background: transparent;
-      .icon {
-        background: #246bfd2e;
-        img {
-          filter: invert(38%) sepia(100%) saturate(3579%) hue-rotate(212deg)
-            brightness(97%) contrast(105%);
-        }
-      }
-      h5,
-      span {
-        color: var(--heading-color);
-      }
-    }
-  }
 }
 
 .banner-inner {

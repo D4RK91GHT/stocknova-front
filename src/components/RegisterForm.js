@@ -44,7 +44,7 @@ const RegisterForm = () => {
 
                       <div className="col-12 mb-3">
                         <button
-                          className="btn btn-black mt-0 w-100 border-radius-5"
+                          className="sn-btn mt-0 w-100 border-radius-5"
                           href="#"
                         >
                           Register
@@ -52,7 +52,12 @@ const RegisterForm = () => {
                       </div>
                       <div className="text-center">
                         <Link className="mt-5" to="/login">
-                          New Here ? Register Now
+                          Already Registered? Login Here
+                        </Link>
+                      </div>
+                      <div className="text-center py-2">
+                        <Link className="text-black" to="/">
+                          Go Back
                         </Link>
                       </div>
                     </div>

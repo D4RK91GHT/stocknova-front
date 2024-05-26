@@ -109,9 +109,10 @@
     color: #fff;
   }
 }
-.btn-red {
-  color: #fff;
-  background: #f14d5d;
+
+.btn-grey {
+  color: var(--heading-color);
+  background: #d4d4d4;
   &:hover {
     color: #fff;
   }
@@ -206,6 +207,10 @@
   background: #50af9b;
 }
 
+.text-black{
+  color: var(--heading-color);
+  text-decoration: underline;
+}
 .read-more-text {
   position: relative;
   color: var(--heading-color);

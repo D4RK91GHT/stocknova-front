@@ -149,6 +149,11 @@ const LoginForm = () => {
                           New Here ? Register Now
                         </Link>
                       </div>
+                      <div className="text-center py-2">
+                        <Link className="text-black" to="/">
+                          Go Back
+                        </Link>
+                      </div>
                     </div>
                   </form>
                 </div>

@@ -28,7 +28,7 @@ const PreviousDataTable = ({ data }) => {
   };
   
   return (
-    <div className="table-responsive mt-5 bg-white">
+    <div className="table-responsive mt-3 mt-md-5 bg-white">
       <table className="table" style={tstyle}>
         <thead>
           <tr>

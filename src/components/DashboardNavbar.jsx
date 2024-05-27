@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Dropdown from "react-bootstrap/Dropdown";
-import { RiMenu2Line, RiSearchLine } from "react-icons/ri";
+import { RiMenu2Line } from "react-icons/ri";
 
 export default function DashboardNavbar() {
   const CustomToggle = React.forwardRef(({ children, onClick }, ref) => (
@@ -34,16 +34,11 @@ export default function DashboardNavbar() {
 
 
   return (
-    <div className="header-main px-3 px-lg-4">
+    <div className="header-main d-flex justify-content-between px-3 px-lg-4">
       <Link onClick={toggleSidebar} className="menu-link me-3 me-lg-4">
         {/* <i className="ri-menu-2-fill"></i> */}
         <RiMenu2Line />
       </Link>
-
-      <div className="form-search me-auto">
-        <input type="text" className="form-control" placeholder="Search" />
-        <RiSearchLine />
-      </div>
 
       <Dropdown className="dropdown-profile ms-3 ms-xl-4" align="end">
         <Dropdown.Toggle as={CustomToggle}>
@@ -54,7 +49,7 @@ export default function DashboardNavbar() {
         <Dropdown.Menu className="mt-10-f">
           <div className="dropdown-menu-body">
             <div className="avatar avatar-xl online mb-3"><img src="assets/img/user-avatar.png" alt="" /></div>
-            <h5 className="mb-1 text-dark fw-semibold">Shaira Diaz</h5>
+            <h5 className="mb-1 text-dark fw-semibold">Dipak Majumdar</h5>
             <p className="fs-sm text-secondary">Premium Member</p>
 
             <nav className="nav">

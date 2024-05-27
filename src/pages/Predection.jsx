@@ -31,14 +31,14 @@
 //       const formData = new FormData();
 //       formData.append("symbol", `${symbol}.NS`);
 //       formData.append("period", period);
-      
+
 //       try {
 //         const response = await axios.post(
 //           `http://127.0.0.1:8000/showdata/`,
 //           formData,
 //           { signal }
 //         );
-        
+
 //         setPreviousData(response.data.data);
 //         setOldTimeSeries(JSON.parse(response.data.timeSeries));
 //         setPredictedTable(response.data.predictedData);
@@ -91,13 +91,11 @@
 //     switchSkin(skin);
 //   }, [skin]);
 
-
 //   const ChangePredectionPeriod = (event) => {
 //     const selectedPeriod = event.target.value;
 //     setPeriod(selectedPeriod);
 
 //   };
-
 
 //   return (
 //     <>
@@ -154,7 +152,7 @@ import "cryptofont/css/cryptofont.css";
 
 const Prediction = () => {
   const { symbol } = useParams(); // Get the dynamic symbol from the URL
-  const [period, setPeriod] = useState('90');
+  const [period, setPeriod] = useState("90");
   const [previousData, setPreviousData] = useState([]);
   const [oldTimeSeries, setOldTimeSeries] = useState([]);
   const [predictedTable, setPredictedTable] = useState([]);
@@ -169,14 +167,14 @@ const Prediction = () => {
     const formData = new FormData();
     formData.append("symbol", `${currentSymbol}.NS`);
     formData.append("period", currentPeriod);
-    
+
     try {
       const response = await axios.post(
         `http://127.0.0.1:8000/showdata/`,
         formData,
         { signal }
       );
-      
+
       setPreviousData(response.data.data);
       setOldTimeSeries(JSON.parse(response.data.timeSeries));
       setPredictedTable(response.data.predictedData);
@@ -185,7 +183,7 @@ const Prediction = () => {
       setLoading(false); // Set loading to false after data is fetched
     } catch (error) {
       if (axios.isCancel(error)) {
-        console.log('Request canceled', error.message);
+        console.log("Request canceled", error.message);
       } else {
         console.error("Error fetching predictions:", error);
       }
@@ -202,7 +200,6 @@ const Prediction = () => {
     fetchData(symbol, period);
   }, [symbol, period, fetchData]);
 
-
   const ChangePredectionPeriod = (event) => {
     const selectedPeriod = event.target.value;
     setPeriod(selectedPeriod);
@@ -212,14 +209,22 @@ const Prediction = () => {
 
   return (
     <>
-      <DashboardNavbar/>
-      <Sidebar/>
+      <DashboardNavbar />
+      <Sidebar />
       <div className="main main-app p-3 p-lg-4">
-        <div className="d-flex justify-content-between">
-          <h1 className="w-100">Predicting {symbol} for {period} Days</h1>
+        <div className="d-flex flex-column-reverse justify-content-between">
+          <h1 className="text-center text-lg-start w-100">
+            Predicting {symbol} for {period} Days
+          </h1>
 
-          <Form.Select className="w-auto" onChange={ChangePredectionPeriod} defaultValue="90">
-            <option value="" disabled>Select Time Range</option>
+          <Form.Select
+            className="w-auto ms-auto"
+            onChange={ChangePredectionPeriod}
+            defaultValue="90"
+          >
+            <option value="" disabled>
+              Select Time Range
+            </option>
             <option value="30">One Month</option>
             <option value="60">Two Months</option>
             <option value="90">Three Months</option>
@@ -231,7 +236,7 @@ const Prediction = () => {
         ) : previousData ? (
           <div>
             {/* Render your prediction data here */}
-            <PreviousDataTable data={previousData}/>
+            <PreviousDataTable data={previousData} />
             <PreviousTimeSeries seriesData={oldTimeSeries} />
             <PredictedTable predictedTableData={predictedTable} />
             <PredictedGraph predictedGraphData={predictedGraph} />

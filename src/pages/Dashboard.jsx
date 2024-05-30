@@ -1,72 +1,16 @@
 import React from "react";
-import Sidebar from "../components/Sidebar";
-import DashboardNavbar from "../components/DashboardNavbar";
 import { Card, Col, Nav, ProgressBar, Row } from "react-bootstrap";
 import { Grid } from "gridjs-react";
-import { Link } from "react-router-dom";
 
-import { dp3 } from "../data/DashboardData";
 import ReactApexChart from "react-apexcharts";
+// import axios from "axios";
+import { dp3 } from "../data/DashboardData";
+
+import Sidebar from "../components/Sidebar";
+import DashboardNavbar from "../components/DashboardNavbar";
+import CurrentNifty from "../components/CurrentNifty";
 
 const Dashboard = () => {
-  const seriesOne = [
-    {
-      name: "series1",
-      data: dp3,
-    },
-    {
-      name: "series2",
-      data: dp3,
-    },
-  ];
-
-  const optionOne = {
-    chart: {
-      parentHeightOffset: 0,
-      type: "area",
-      toolbar: { show: false },
-      stacked: true,
-    },
-    colors: ["#4f6fd9", "#506fd9"],
-    grid: {
-      borderColor: "rgba(72,94,144, 0.08)",
-      padding: { top: -20 },
-      yaxis: {
-        lines: { show: false },
-      },
-    },
-    stroke: {
-      curve: "straight",
-      width: [2, 0],
-    },
-    xaxis: {
-      type: "numeric",
-      tickAmount: 13,
-      axisBorder: { show: false },
-      labels: {
-        style: {
-          colors: "#6e7985",
-          fontSize: "11px",
-        },
-      },
-    },
-    yaxis: {
-      min: 0,
-      max: 100,
-      show: false,
-    },
-    fill: {
-      type: "gradient",
-      gradient: {
-        opacityFrom: 0.5,
-        opacityTo: 0,
-      },
-    },
-    dataLabels: { enabled: false },
-    legend: { show: false },
-    tooltip: { enabled: false },
-  };
-
   const seriesTwo = [
     {
       type: "column",
@@ -575,7 +519,6 @@ const Dashboard = () => {
     tooltip: { enabled: false },
   };
 
-
   const seriesSeven = [
     {
       data: [
@@ -651,94 +594,6 @@ const Dashboard = () => {
     tooltip: { enabled: false },
   };
 
-  const seriesEight = [
-    {
-      type: "column",
-      data: [
-        [0, 2],
-        [1, 3],
-        [2, 5],
-        [3, 7],
-        [4, 12],
-        [5, 17],
-        [6, 10],
-        [7, 14],
-        [8, 15],
-        [9, 12],
-        [10, 8],
-      ],
-    },
-    {
-      type: "column",
-      data: [
-        [0, 12],
-        [1, 7],
-        [2, 4],
-        [3, 5],
-        [4, 8],
-        [5, 10],
-        [6, 4],
-        [7, 7],
-        [8, 11],
-        [9, 9],
-        [10, 5],
-      ],
-    },
-  ];
-
-  const optionEight = {
-    chart: {
-      parentHeightOffset: 0,
-      stacked: true,
-      type: "line",
-      toolbar: { show: false },
-    },
-    grid: {
-      borderColor: "rgba(72,94,144, 0.07)",
-      padding: {
-        top: -20,
-        left: 5,
-        bottom: -15,
-      },
-    },
-    states: {
-      hover: {
-        filter: { type: "none" },
-      },
-      active: {
-        filter: { type: "none" },
-      },
-    },
-    colors: ["#506fd9", "#e5e9f2"],
-    plotOptions: {
-      bar: {
-        columnWidth: "40%",
-        endingShape: "rounded",
-      },
-    },
-    stroke: {
-      curve: "straight",
-      lineCap: "square",
-      width: 0,
-    },
-    yaxis: {
-      min: 0,
-      max: 30,
-      tickAmount: 5,
-    },
-    xaxis: {
-      labels: {
-        style: {
-          colors: "#6e7985",
-          fontSize: "10px",
-          fontWeight: "500",
-        },
-      },
-    },
-    tooltip: { enabled: false },
-    legend: { show: false },
-  };
-
   const optionDonut = {
     chart: {
       parentHeightOffset: 0,
@@ -754,7 +609,6 @@ const Dashboard = () => {
     legend: { show: false },
   };
 
-
   return (
     <>
       <DashboardNavbar />
@@ -764,7 +618,7 @@ const Dashboard = () => {
           <Col xl="9">
             <Card className="card-one">
               <Card.Body className="overflow-hidden px-0 pb-3">
-                <div className="finance-info p-3 p-xl-4">
+                {/* <div className="finance-info p-3 p-xl-4">
                   <label className="fs-sm fw-medium mb-2 mb-xl-1">
                     Profit This Year
                   </label>
@@ -830,23 +684,8 @@ const Dashboard = () => {
                       </Col>
                     ))}
                   </Row>
-                </div>
-
-                <Nav as="nav" className="nav-finance-one p-3 p-xl-4">
-                  <Link href="" className="active">
-                    2023
-                  </Link>
-                  <Link href="">2022</Link>
-                  <Link href="">2021</Link>
-                </Nav>
-
-                <ReactApexChart
-                  series={seriesOne}
-                  options={optionOne}
-                  type="area"
-                  height={430}
-                  className="apex-chart-two"
-                />
+                </div> */}
+                <CurrentNifty />
               </Card.Body>
             </Card>
           </Col>
@@ -982,7 +821,7 @@ const Dashboard = () => {
           <Col md="5" xl="6">
             <Card className="card-one">
               <Card.Header>
-              <Card.Title as="h6">My Wishlist</Card.Title>
+                <Card.Title as="h6">My Wishlist</Card.Title>
               </Card.Header>
               <Card.Body className="pb-4">
                 <Grid
@@ -1134,71 +973,7 @@ const Dashboard = () => {
               </Card.Body>
             </Card>
           </Col>
-          <Col xl="8">
-            <Card className="card-one">
-              <Card.Header>
-                <Card.Title as="h6">Expense Analytics</Card.Title>
-                <Nav className="nav-icon nav-icon-sm ms-auto">
-                  <Nav.Link href="">
-                    <i className="ri-refresh-line"></i>
-                  </Nav.Link>
-                  <Nav.Link href="">
-                    <i className="ri-more-2-fill"></i>
-                  </Nav.Link>
-                </Nav>
-              </Card.Header>
-              <Card.Body className="p-4">
-                <Row className="g-4">
-                  <Col md="6">
-                    <ReactApexChart
-                      series={seriesEight}
-                      options={optionEight}
-                      height={210}
-                      className="apex-chart-three"
-                    />
-                  </Col>
-                  <Col md="6">
-                    <div className="d-flex">
-                      <i className="ri-hotel-line fs-48 lh-1 me-3"></i>
-                      <div>
-                        <h6 className="fw-semibold text-dark mb-1">
-                          Fixed Expenses
-                        </h6>
-                        <p className="fs-sm text-secondary mb-0">
-                          Fixed expenses are generally fixed in both amount and
-                          interval.
-                        </p>
-                      </div>
-                    </div>
-                    <div className="d-flex mt-3">
-                      <i className="ri-wallet-3-line fs-48 lh-1 me-3"></i>
-                      <div>
-                        <h6 className="fw-semibold text-dark mb-1">
-                          Periodic Expenses
-                        </h6>
-                        <p className="fs-sm text-secondary mb-0">
-                          Periodic expenses are usually less frequent and the
-                          amount can vary.
-                        </p>
-                      </div>
-                    </div>
-                    <div className="d-flex mt-3">
-                      <i className="ri-shopping-bag-3-line fs-48 lh-1 me-3"></i>
-                      <div>
-                        <h6 className="fw-semibold text-dark mb-1">
-                          Variable Expenses
-                        </h6>
-                        <p className="fs-sm text-secondary mb-0">
-                          Change as the quantity of good or service that
-                          produces changes.
-                        </p>
-                      </div>
-                    </div>
-                  </Col>
-                </Row>
-              </Card.Body>
-            </Card>
-          </Col>
+          
           <Col xl="4">
             <Card className="card-one">
               <Card.Header>

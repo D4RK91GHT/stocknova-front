@@ -45,28 +45,6 @@
   }
 }
 
-.nav-finance-one {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 10;
-  font-family: $ff-numerals;
-  font-size: $font-size-sm;
-
-  a {
-    color: $secondary;
-    letter-spacing: -.2px;
-
-    &.active {
-      font-weight: $font-weight-medium;
-      color: $primary;
-      text-decoration: underline;
-    }
-
-    + a { margin-left: 10px; }
-  }
-}
-
 .card-wallet {
   position: relative;
   overflow: hidden;

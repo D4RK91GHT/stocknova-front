@@ -20,8 +20,6 @@ export default function Stocks() {
             <TickersList />
           </Col>
         </Row>
-
-        {/* <Footer /> */}
       </div>
     </>
   );

@@ -46,16 +46,15 @@ const CurrentNifty = () => {
           <Spinner animation="grow" />
         </div>
       ) : niftyData && niftyData.market.series ? (
-        <div className="finance-info p-3 p-xl-4">
+        <div className="finance-info p-3 pb-0 p-xl-4 pb-xl-0">
         <label className="fs-sm fw-medium mb-2 mb-xl-1">Current {niftyInfo.longName}</label>
         <h1 className="finance-value">
           <span>{CURRENCYSYMBOL}</span>{niftyInfo.previousClose} <span>{niftyInfo.currency}</span>
         </h1>
 
         <h4 className="finance-subvalue mb-3 mb-md-2">
-          <i className="ri-arrow-up-line text-primary"></i>
-          <span className="text-primary">38.63%</span>
-          <small>vs last year</small>
+          <span className="text-primary small">{CURRENCYSYMBOL}{niftyInfo.open}</span>
+          <small>Opening Price</small>
         </h4>
 
         <Row className="row-cols-auto g-3 g-xl-4 pt-2">
@@ -72,38 +71,11 @@ const CurrentNifty = () => {
               percent: "6.8",
               status: "success",
             },
-            {
-              amount: "68,156.00",
-              text: "Third",
-              percent: "10.5",
-              status: "success",
-            },
-            {
-              amount: "64,896.65",
-              text: "Fourth",
-              percent: "0.8",
-              status: "danger",
-            },
           ].map((item, index) => (
             <Col key={index}>
               <h6 className="card-value fs-15 mb-1">{CURRENCYSYMBOL}{item.amount} {niftyInfo.currency}</h6>
               <span className="fs-sm fw-medium text-secondary d-block mb-1">
                 {item.text}
-              </span>
-              <span
-                className={
-                  "fs-xs d-flex align-items-center ff-numerals text-" +
-                  item.status
-                }
-              >
-                {item.percent}%{" "}
-                <i
-                  className={
-                    (item.status === "success"
-                      ? "ri-arrow-up-line"
-                      : "ri-arrow-down-line") + " fs-15 lh-3"
-                  }
-                ></i>
               </span>
             </Col>
           ))}

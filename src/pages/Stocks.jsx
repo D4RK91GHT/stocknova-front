@@ -1,7 +1,6 @@
 import React from "react";
 import DashboardNavbar from "../components/DashboardNavbar";
 import Sidebar from "../components/Sidebar";
-import StockCards from "../components/StockCards";
 import TickersList from "../components/TickersList";
 
 import { Row, Col} from "react-bootstrap";
@@ -17,8 +16,6 @@ export default function Stocks() {
 
       <div className="main main-app p-3 p-lg-4">
         <Row className="g-3">
-          <StockCards />
-
           <Col md="12" xl="12">
             <TickersList />
           </Col>

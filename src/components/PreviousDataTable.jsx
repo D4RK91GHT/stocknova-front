@@ -1,4 +1,5 @@
 import React from "react";
+import { Grid } from "gridjs-react";
 
 const PreviousDataTable = ({ data }) => {
   // Extract keys from the data object
@@ -22,37 +23,32 @@ const PreviousDataTable = ({ data }) => {
     return num.toFixed(2);
   };
 
-  const tstyle = {
-    width: "70%",
-    margin: "0 auto",
-  };
+  const columns = Object.keys(data);
+
+  const gridData = uniqueKeys.map((uniqueKey) => {
+    return columns.map((column) => {
+      if (column === "Date") return formatDate(data.Date[uniqueKey]);
+      if (column === "Volume") return data.Volume[uniqueKey];
+      return formatAmount(data[column][uniqueKey]);
+    });
+  });
 
   return (
     <div className="table-responsive mt-2 py-5 bg-white">
       <h3 className="text-center mb-4">Previous Price Table</h3>
-      <table className="table table-striped" style={tstyle}>
-        <thead>
-          <tr>
-            {keys.map((key, index) => (
-              <th key={index}>{key}</th>
-            ))}
-          </tr>
-        </thead>
-
-        <tbody>
-          {uniqueKeys.map((uniqueKey, index) => (
-            <tr key={index}>
-              <td>{formatDate(data.Date[uniqueKey])}</td>
-              <td>{formatAmount(data.Open[uniqueKey])}</td>
-              <td>{formatAmount(data.High[uniqueKey])}</td>
-              <td>{formatAmount(data.Low[uniqueKey])}</td>
-              <td>{formatAmount(data.Close[uniqueKey])}</td>
-              <td>{formatAmount(data["Adj Close"][uniqueKey])}</td>
-              <td>{data.Volume[uniqueKey]}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+      <div className="w-75 mx-auto">
+        <Grid
+          data={gridData}
+          columns={columns.map((column) => ({ name: column }))}
+          search={true}
+          pagination={{
+            limit: 10,
+          }}
+          className={{
+            table: "table mb-0",
+          }}
+        />
+      </div>
     </div>
   );
 };

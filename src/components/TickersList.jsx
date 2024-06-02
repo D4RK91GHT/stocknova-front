@@ -38,7 +38,7 @@ export default function TickersList() {
     <>
       <Card className="card-one">
         <Card.Header>
-          <Card.Title as="h6">My Wishlist</Card.Title>
+          <Card.Title as="h6">Our List Of Stocks</Card.Title>
         </Card.Header>
         <Card.Body className="pb-4">
           <Grid
@@ -54,10 +54,10 @@ export default function TickersList() {
                   return h(
                     "button",
                     {
-                      className: "py-2 px-4 border rounded-md text-white bg-blue",
+                      className: "btn btn-sm btn-primary",
                       onClick: () => navigate(`/predict/${row.cells[4].data}`),
                     },
-                    "View"
+                    "Start"
                   );
                 },
               },

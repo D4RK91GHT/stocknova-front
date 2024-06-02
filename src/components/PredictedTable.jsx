@@ -56,7 +56,7 @@ const PredictedTable = ({ predictedTableData }) => {
   const columns = keys
     .filter((key) => !excludedKeys.includes(key))
     .map((key) => ({
-      name: capitalizeAndFormat(key),
+      name: key === "ds" ? "Date" : key === "yhat" ? "Predicted" : capitalizeAndFormat(key),
     }));
 
   return (

@@ -16,20 +16,21 @@ const PreviousDataTable = ({ data }) => {
     const inputDate = new Date(inputDateString);
     const options = { day: "numeric", month: "long", year: "numeric" };
     return inputDate.toLocaleDateString("en-US", options);
-  }
+  };
 
   const formatAmount = (num) => {
     return num.toFixed(2);
-  }
+  };
 
   const tstyle = {
     width: "70%",
     margin: "0 auto",
   };
-  
+
   return (
-    <div className="table-responsive mt-3 mt-md-5 bg-white">
-      <table className="table" style={tstyle}>
+    <div className="table-responsive mt-2 py-5 bg-white">
+      <h3 className="text-center mb-4">Previous Price Table</h3>
+      <table className="table table-striped" style={tstyle}>
         <thead>
           <tr>
             {keys.map((key, index) => (

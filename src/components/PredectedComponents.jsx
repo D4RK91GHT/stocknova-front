@@ -1,12 +1,14 @@
-import React from 'react'
-// import Plot from "react-plotly.js";
-import PComponent from './PComponent'; // Import the component
+import React from "react";
 
-
-const PredectedComponents = ({componentsData}) => {
+const PredectedComponents = ({ componentsData }) => {
   return (
-    <PComponent base64Image={componentsData}/>
-  )
-
-}
+    <div className="text-center mt-2 py-5 bg-white">
+      <h3 className="mb-4">Predicted Components</h3>
+      <img
+        src={`data:image/png;base64, ${componentsData}`}
+        alt="Forecast Components"
+      />
+    </div>
+  );
+};
 export default PredectedComponents;

@@ -102,7 +102,6 @@ const Prediction = () => {
             </div>
           ) : previousData ? (
             <div className="w-100">
-              <h3>Previous Price Table</h3>
               <PreviousDataTable data={previousData} />
             </div>
           ) : (
@@ -116,8 +115,7 @@ const Prediction = () => {
               <Spinner animation="grow" />
             </div>
           ) : previousData ? (
-            <div className="w-100">
-              <h3>Previous Price Chart</h3>
+            <div className="w-100 overflow-auto">
               <PreviousTimeSeries seriesData={oldTimeSeries} />
             </div>
           ) : (
@@ -132,7 +130,6 @@ const Prediction = () => {
             </div>
           ) : previousData ? (
             <div className="w-100">
-              <h3>Predicted Price Table</h3>
               <PredictedTable predictedTableData={predictedTable} />
             </div>
           ) : (
@@ -147,7 +144,6 @@ const Prediction = () => {
             </div>
           ) : previousData ? (
             <div className="w-100">
-              <h3>Predicted Price Chart</h3>
               <PredictedGraph predictedGraphData={predictedGraph} />
             </div>
           ) : (
@@ -162,7 +158,6 @@ const Prediction = () => {
             </div>
           ) : previousData ? (
             <div className="w-100">
-              <h3>Predicted Components</h3>
               <PredectedComponents componentsData={predictedComponents} />
             </div>
           ) : (

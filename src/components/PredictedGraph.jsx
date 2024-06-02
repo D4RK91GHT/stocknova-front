@@ -1,14 +1,16 @@
 import React from "react";
 import Plot from "react-plotly.js";
 
-const PredictedGraph = ({predictedGraphData}) => {
-  
+const PredictedGraph = ({ predictedGraphData }) => {
   return (
-    <Plot
-      data={predictedGraphData.data}
-      layout={predictedGraphData.layout}
-      style={{ width: "100%", height: "500px" }}
-    />
+    <div className="mt-2 py-5 bg-white">
+    <h3 className="text-center">Predicted Price Chart</h3>
+      <Plot
+        data={predictedGraphData.data}
+        layout={predictedGraphData.layout}
+        className="w-100 d-flex justify-content-center"
+        />
+        </div>
   );
 };
 

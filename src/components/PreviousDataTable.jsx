@@ -44,9 +44,7 @@ const PreviousDataTable = ({ data }) => {
           pagination={{
             limit: 10,
           }}
-          className={{
-            table: "table mb-0",
-          }}
+          className={{ table: "table mb-0 border table-striped" }}
         />
       </div>
     </div>

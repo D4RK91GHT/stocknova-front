@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid } from "gridjs-react";
 
-const PreviousDataTable = ({ data }) => {
+const PreviousDataTable = ({ data, heading }) => {
   // Extract keys from the data object
   const keys = Object.keys(data);
 
@@ -35,7 +35,7 @@ const PreviousDataTable = ({ data }) => {
 
   return (
     <div className="table-responsive mt-2 py-5 bg-white">
-      <h3 className="text-center mb-4">Historical Price Table</h3>
+      <h3 className="text-center mb-4">{heading !== ''? heading : 'Historical Price Table'}</h3>
       <div className="w-75 mx-auto">
         <Grid
           data={gridData}

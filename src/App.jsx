@@ -10,6 +10,8 @@ import TeamDetails from "./pages/TeamDetails";
 import Dashboard from "./pages/Dashboard";
 import Stocks from "./pages/Stocks";
 import Predection from "./pages/Predection";
+import BackTest from "./pages/BackTest";
+
 
 
 import AOS from "aos";
@@ -39,6 +41,7 @@ function App() {
         <Route exact path='/dashboard' element={<Dashboard />} />
         <Route exact path='/stocks' element={<Stocks />} />
         <Route exact path='/predict/:symbol' element={<Predection />} />
+        <Route exact path='/back-test/' element={<BackTest />} />
 
 
       </Routes>

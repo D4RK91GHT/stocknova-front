@@ -12,13 +12,8 @@ const dashboardMenu = [
     "icon": <RiBarChartFill className='me-1' />
   },
   {
-    "label": "Sales Monitoring",
-    "link": "/dashboard/sales",
-    "icon": <RiBarChartFill className='me-1' />
-  },
-  {
-    "label": "Website Analytics",
-    "link": "/dashboard/analytics",
+    "label": "Back Test",
+    "link": "/back-test",
     "icon": <RiBarChartFill className='me-1' />
   }
 ];

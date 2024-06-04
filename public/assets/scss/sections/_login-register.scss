@@ -6,6 +6,11 @@
 .login-section {
   position: relative;
   z-index: 2;
+  text-align: center;
+  .logo{
+    margin: 0 auto;
+    width: 50%;
+  }
   .sub-login-section {
     background: #fff;
     padding: 50px;
@@ -13,6 +18,29 @@
     box-shadow: $box-shadow;
     .title {
       font-size: 35px;
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .login-section {
+    .logo{
+      width: 14rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .login-section {
+    .logo{
+      width: 16rem;
+    }
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .login-section {
+    .logo{
+      width: 15rem;
     }
   }
 }

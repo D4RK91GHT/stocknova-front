@@ -11,37 +11,19 @@ const FaqArea = () => {
         <div className="container">
           <div className="row pd-top-120">
             <div
-              className="col-xl-5 col-lg-6 col-md-8 order-lg-last"
-              data-aos="fade-left"
-              data-aos-delay="100"
-              data-aos-duration="1500"
-            >
-              <div className="about-thumb-inner pt-lg-3">
-                <img
-                  className="main-img"
-                  src="assets/img/about/4.png"
-                  alt="img"
-                />
-                <img
-                  className="animate-img-bottom-right top_image_bounce"
-                  src="assets/img/about/5.png"
-                  alt="img"
-                />
-              </div>
-            </div>
-            <div
-              className="col-xl-7 col-lg-6"
+              className="col-12"
               data-aos="fade-right"
               data-aos-delay="100"
               data-aos-duration="1500"
             >
               <div className="section-title mb-0 mt-4 mt-lg-0">
                 <h6 className="sub-title">SOME FAQ'S</h6>
-                <h2 className="title">
-                Get Answers to Your Questions
-                </h2>
+                <h2 className="title">Get Answers to Your Questions</h2>
                 <p className="content">
-                We've compiled a list of frequently asked questions (FAQs) to help you get started. If you can't find what you're looking for here, don't hesitate to <Link to="/logout">Contact Us</Link>.
+                  We've compiled a list of frequently asked questions (FAQs) to
+                  help you get started. If you can't find what you're looking
+                  for here, don't hesitate to{" "}
+                  <Link to="/logout">Contact Us</Link>.
                 </p>
               </div>
               <div

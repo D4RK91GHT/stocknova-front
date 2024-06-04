@@ -2,7 +2,7 @@ import React from "react";
 import { FaCheckCircle, FaPlus } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-const AboutAreaTwo = () => {
+const AboutArea = () => {
   return (
     <>
       {/* =============== About Area Two End ===============*/}
@@ -32,42 +32,38 @@ const AboutAreaTwo = () => {
               <div className='section-title mb-0'>
                 <h6 className='sub-title'>ABOUT US</h6>
                 <h2 className='title'>
-                  Empowering businesses with SaaS technology
+                  Empowering Investor's Journey
                 </h2>
                 <p className='content mb-4'>
-                  You can access SaaS applications through a web browser or
-                  mobile app, as long as you have an internet connection.
+                At the intersection of technology and finance, Stock Nova was founded with a mission to revolutionize the way investors approach the stock market. Our innovative application leverages advanced machine learning algorithms and vast historical data to provide precise and reliable stock price predictions.
                 </p>
                 <div className='row'>
                   <div className='col-md-6'>
                     <ul className='single-list-inner style-check style-heading style-check mb-3'>
                       <li>
-                        <FaCheckCircle /> Mistakes To Avoid to the
+                        <FaCheckCircle /> Advanced ML Algorithms
                       </li>
                       <li>
-                        <FaCheckCircle /> Your Startup industry stan
+                        <FaCheckCircle /> User-Friendly Interface
                       </li>
                     </ul>
                   </div>
                   <div className='col-md-6'>
                     <ul className='single-list-inner style-check style-heading style-check mb-3'>
                       <li>
-                        <FaCheckCircle /> Mistakes To Avoid to the
+                        <FaCheckCircle /> Real-Time Updates
                       </li>
                       <li>
-                        <FaCheckCircle /> Your Startup industry stan
+                        <FaCheckCircle /> Robust Security
                       </li>
                     </ul>
                   </div>
                 </div>
                 <p className='content'>
-                  SaaS providers typically invest heavily in security measures
-                  to protect customer data, such as encryption and multi-factor
-                  authentication. However, it is important to research and
-                  choose a reputable provider and also to ensure that
+                At Stock Nova, we prioritize your privacy and data security. We employ state-of-the-art encryption and adhere to the highest standards of security protocols to protect your personal and financial information.
                 </p>
-                <Link className='btn btn-border-base' to='/about'>
-                  Discover More <FaPlus />
+                <Link className='btn login-btn btn-border-base' to='/about'>
+                  Know More <FaPlus />
                 </Link>
               </div>
             </div>
@@ -79,4 +75,4 @@ const AboutAreaTwo = () => {
   );
 };
 
-export default AboutAreaTwo;
+export default AboutArea;

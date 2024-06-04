@@ -1,49 +1,50 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import AboutAreaTwo from "../components/AboutAreaTwo";
-import BannerTwo from "../components/Banner";
+import AboutArea from "../components/AboutArea";
+import Banner from "../components/Banner";
 import CounterAreaTwo from "../components/CounterAreaTwo";
 import PricingAreaOne from "../components/PricingAreaOne";
 
-import ServiceAreaTwo from "../components/ServiceAreaTwo";
-import ServiceAreaFive from "../components/ServiceAreaFive";
+import ServiceArea from "../components/ServiceArea";
+import PotentialArea from "../components/PotentialArea";
 
-import TestimonialOne from "../components/TestimonialOne";
-import WorkProcessTwo from "../components/WorkProcessTwo";
-import FaqAreaOne from "../components/FaqAreaOne";
+import Testimonial from "../components/Testimonial";
+import WorkProcess from "../components/WorkProcess";
+import FaqArea from "../components/FaqArea";
 import FooterOne from "../components/FooterOne";
 
 
 const Home = () => {
   return (
     <>
-      {/* Navigation Bar Two*/}
+      {/* Navigation Bar*/}
       <Navbar/>
 
-      {/* Banner Two */}
-      <BannerTwo />
+      {/* Banner */}
+      <Banner />
 
-      {/* About Area Two */}
-      <AboutAreaTwo />
+      {/* About Area */}
+      <AboutArea />
 
-      {/* About Area Two */}
-      <ServiceAreaTwo />
-      <ServiceAreaFive />
+      {/* About Area */}
+      <ServiceArea />
+
+      <PotentialArea />
 
       {/* Pricing Area Two */}
-      <PricingAreaOne/>
+      {/* <PricingAreaOne/> */}
 
       {/* Counter Area Two */}
-      <CounterAreaTwo />
+      {/* <CounterAreaTwo /> */}
 
-      {/* Work Process Two */}
-      <WorkProcessTwo />
+      {/* Work Process */}
+      <WorkProcess />
 
       {/* Testimonial One */}
-      <TestimonialOne />
+      <Testimonial />
 
       {/* Blog Area Two */}
-      <FaqAreaOne />
+      <FaqArea />
       
       {/* Footer Two */}
       <FooterOne />

@@ -11,14 +11,6 @@ const Banner = () => {
           <div className="row">
             <div className="col-lg-6 align-self-center">
               <div className="banner-inner pe-xl-5">
-                <h6
-                  className="subtitle "
-                  data-aos="fade-right"
-                  data-aos-delay="100"
-                  data-aos-duration="1500"
-                >
-                  Designing for the future
-                </h6>
                 <h2
                   className="title "
                   data-aos="fade-right"
@@ -26,7 +18,7 @@ const Banner = () => {
                   data-aos-duration="1500"
                 >
                   {" "}
-                  Revolutionize Your <span>Workflow</span> With SaaS
+                  When Data Meets <span>Destiny</span>
                 </h2>
                 <p
                   className="content pe-xl-5 "
@@ -34,9 +26,7 @@ const Banner = () => {
                   data-aos-delay="250"
                   data-aos-duration="1500"
                 >
-                  And In Order To Make A Business, Brand Advertising And
-                  Marketing Plays An Important Role. Similarly, In Making
-                  Cultivation Business Are Necessary.
+                  Welcome to Stock Nova! Harnessing cutting-edge algorithms, our app empowers you to predict stock prices with precision and confidence. Your investment journey starts here.
                 </p>
               </div>
             </div>

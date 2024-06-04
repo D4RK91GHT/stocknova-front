@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const ServiceAreaTwo = () => {
+const ServiceArea = () => {
   return (
     <>
       {/*=================== service area start ===================*/}
@@ -10,9 +10,8 @@ const ServiceAreaTwo = () => {
           <div className='row justify-content-center'>
             <div className='col-lg-6'>
               <div className='section-title text-center'>
-                <h6 className='sub-title'>ADVANCED SERVICES</h6>
                 <h2 className='title'>
-                  Optimize Your <span>Performance</span> With Saas
+                  Key Features of <span>Stock Nova</span>
                 </h2>
               </div>
             </div>
@@ -28,9 +27,9 @@ const ServiceAreaTwo = () => {
                     <img src='assets/img/service/8.png' alt='img' />
                   </div>
                   <h5>
-                    <Link to='/service-details'>CloudCRM</Link>
+                    <Link to='/service-details'>Realtime Data</Link>
                   </h5>
-                  <p>SaaS stands for Software as a Service. It is a software</p>
+                  <p>User Don't Need to worry about the Realtime data, we have integrated Yahoo Finance packageto get the realtime data.</p>
                 </div>
               </div>
             </div>
@@ -44,9 +43,9 @@ const ServiceAreaTwo = () => {
                     <img src='assets/img/service/9.png' alt='img' />
                   </div>
                   <h5>
-                    <Link to='/service-details'>CloudCRM</Link>
+                    <Link to='/service-details'>Latest Technology</Link>
                   </h5>
-                  <p>SaaS stands for Software as a Service. It is a software</p>
+                  <p>We have been used one of most used and latest technology Python's Django, to ensure more rerliable and secure.</p>
                 </div>
               </div>
             </div>
@@ -60,9 +59,9 @@ const ServiceAreaTwo = () => {
                     <img src='assets/img/service/10.png' alt='img' />
                   </div>
                   <h5>
-                    <Link to='/service-details'>CloudCRM</Link>
+                    <Link to='/service-details'>Attractive UI/UX</Link>
                   </h5>
-                  <p>SaaS stands for Software as a Service. It is a software</p>
+                  <p>React JS Components Based Designe and SaaS for designe make this application this much attractive and beautiful.</p>
                 </div>
               </div>
             </div>
@@ -75,4 +74,4 @@ const ServiceAreaTwo = () => {
   );
 };
 
-export default ServiceAreaTwo;
+export default ServiceArea;

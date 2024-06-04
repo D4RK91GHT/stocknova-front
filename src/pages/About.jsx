@@ -2,7 +2,7 @@ import React from "react";
 import AboutAreaOne from "../components/AboutAreaOne";
 // import Breadcrumb from "../components/Breadcrumb";
 import CounterAreaOne from "../components/CounterAreaOne";
-import FaqAreaOne from "../components/FaqAreaOne";
+import FaqArea from "../components/FaqArea";
 import FooterOne from "../components/FooterOne";
 import Navbar from "../components/Navbar";
 import TeamAreaOne from "../components/TeamAreaOne";
@@ -21,7 +21,7 @@ const About = () => {
       <AboutAreaOne />
 
       {/* FAQ Area One */}
-      <FaqAreaOne />
+      <FaqArea />
 
       {/* Team Area One */}
       <TeamAreaOne />

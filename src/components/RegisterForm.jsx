@@ -15,13 +15,37 @@ const RegisterForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
     try {
       const formData = new FormData();
       formData.append("fname", FName);
       formData.append("lname", LName);
       formData.append("email", email);
       formData.append("password", password);
-      console.log(FName, LName, email, password);
+      formData.append("cpassword", cpassword);
+
+
+      if (FName === '') {
+        setError("First name can't be blank!")
+        return
+      }
+      if (LName === '') {
+        setError("Last name can't be blank!")
+        return
+      }
+      if (email === '') {
+        setError("Email is Required!")
+        return
+      }
+      if (password === '') {
+        setError("Please Set a password!")
+        return
+      }
+      if (cpassword !== password) {
+        setError("Confirm Password doesn't match!")
+        return
+      }
+
 
       const response = await axios.post(
         "http://127.0.0.1:8000/register/",
@@ -35,7 +59,11 @@ const RegisterForm = () => {
           }
         } else {
           console.log(response.data.error);
-          setError(response.data.error);
+          if(response.data.error === 'UNIQUE constraint failed: novauser_customuser.email'){
+            setError("Email is already exists!")
+          }else{
+            setError(response.data.error)
+          }
         }
       } else {
         if (response.data.status === false) {
@@ -53,14 +81,17 @@ const RegisterForm = () => {
 
   return (
     <>
-      {/* ========================= contact Area One start =========================*/}
       <div className="login-area">
         <div className="container">
           <div className="login-section">
             <div className="row justify-content-center">
               <div className="col-lg-6">
                 <div className="sub-login-section mb-0 pt-4">
-                  <img className="logo mb-2" src="assets/img/stocknova.png" alt="img" />
+                  <img
+                    className="logo mb-2"
+                    src="assets/img/stocknova.png"
+                    alt="img"
+                  />
 
                   {error ? <Alert variant="warning">{error}</Alert> : ""}
                   <form className="mt-4" onSubmit={handleSubmit}>
@@ -151,7 +182,6 @@ const RegisterForm = () => {
           </div>
         </div>
       </div>
-      {/*========================= contact-inner One end =========================*/}
     </>
   );
 };

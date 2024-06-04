@@ -4,6 +4,8 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Team from "./pages/Team";
 import Login from "./pages/Login";
+import Logout from "./pages/Logout";
+
 import Register from "./pages/Register";
 import TeamDetails from "./pages/TeamDetails";
 
@@ -33,6 +35,8 @@ function App() {
         <Route exact path='/' element={<Home />} />
         <Route exact path='/login' element={<Login />} />
         <Route exact path='/register' element={<Register />} />
+        <Route exact path='/logout' element={<Logout />} />
+
         <Route exact path='/about' element={<About />} />
         <Route exact path='/contact' element={<Contact />} />
         <Route exact path='/team' element={<Team />} />

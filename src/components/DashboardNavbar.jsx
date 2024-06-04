@@ -53,15 +53,13 @@ export default function DashboardNavbar() {
             <p className="fs-sm text-secondary">Premium Member</p>
 
             <nav className="nav">
-              <Link to="/"><i className="ri-edit-2-line"></i> Edit Profile</Link>
-              <Link to="/"><i className="ri-profile-line"></i> View Profile</Link>
+              <Link to="/"><i className="ri-edit-2-line"></i>Profile</Link>
             </nav>
             <hr />
             <nav className="nav">
               <Link to=""><i className="ri-question-line"></i> Help Center</Link>
-              <Link to=""><i className="ri-lock-line"></i> Privacy Settings</Link>
               <Link to=""><i className="ri-user-settings-line"></i> Account Settings</Link>
-              <Link to="/pages/signin"><i className="ri-logout-box-r-line"></i> Log Out</Link>
+              <Link to="/logout"><i className="ri-logout-box-r-line"></i> Log Out</Link>
             </nav>
           </div>
         </Dropdown.Menu>

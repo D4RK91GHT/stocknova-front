@@ -60,7 +60,7 @@ const Banner = () => {
                   />
                   <img
                     className="main-img"
-                    src="assets/img/banner-2/1.png"
+                    src="assets/img/banner-2/home.png"
                     alt="img"
                   />
                 </div>

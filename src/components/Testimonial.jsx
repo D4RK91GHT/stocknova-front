@@ -83,9 +83,6 @@ const Testimonial = () => {
                     <FaStar />
                     <FaStar />
                   </div>
-                  <div className="thumb">
-                    <img src="assets/img/testimonial/1.png" alt="img" />
-                  </div>
                 </div>
               </div>
               <div className="item">
@@ -106,9 +103,6 @@ const Testimonial = () => {
                     <FaStar />
                     <FaStar />
                     <FaStar />
-                  </div>
-                  <div className="thumb">
-                    <img src="assets/img/testimonial/2.png" alt="img" />
                   </div>
                 </div>
               </div>
@@ -131,9 +125,6 @@ const Testimonial = () => {
                     <FaStar />
                     <FaStar />
                   </div>
-                  <div className="thumb">
-                    <img src="assets/img/testimonial/3.png" alt="img" />
-                  </div>
                 </div>
               </div>
               <div className="item">
@@ -154,9 +145,6 @@ const Testimonial = () => {
                     <FaStar />
                     <FaStar />
                     <FaStar />
-                  </div>
-                  <div className="thumb">
-                    <img src="assets/img/testimonial/1.png" alt="img" />
                   </div>
                 </div>
               </div>

@@ -2,8 +2,6 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import AboutArea from "../components/AboutArea";
 import Banner from "../components/Banner";
-import CounterAreaTwo from "../components/CounterAreaTwo";
-import PricingAreaOne from "../components/PricingAreaOne";
 
 import ServiceArea from "../components/ServiceArea";
 import PotentialArea from "../components/PotentialArea";
@@ -31,22 +29,16 @@ const Home = () => {
 
       <PotentialArea />
 
-      {/* Pricing Area Two */}
-      {/* <PricingAreaOne/> */}
-
-      {/* Counter Area Two */}
-      {/* <CounterAreaTwo /> */}
-
       {/* Work Process */}
       <WorkProcess />
 
-      {/* Testimonial One */}
+      {/* Testimonial */}
       <Testimonial />
 
-      {/* Blog Area Two */}
+      {/* Blog Area */}
       <FaqArea />
       
-      {/* Footer Two */}
+      {/* Footer */}
       <FooterOne />
 
     </>

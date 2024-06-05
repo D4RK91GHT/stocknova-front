@@ -1,38 +1,25 @@
 import React from "react";
-import AboutAreaOne from "../components/AboutAreaOne";
 // import Breadcrumb from "../components/Breadcrumb";
-import CounterAreaOne from "../components/CounterAreaOne";
+import AboutArea from "../components/AboutArea";
 import FaqArea from "../components/FaqArea";
 import FooterOne from "../components/FooterOne";
 import Navbar from "../components/Navbar";
-import TeamAreaOne from "../components/TeamAreaOne";
-import WorkProcessOne from "../components/WorkProcessOne";
+import WorkProcess from "../components/WorkProcess";
 
 const About = () => {
   return (
     <>
       {/* Navigation Bar */}
       <Navbar />
-
-      {/* Navigation Bar */}
-      {/* <Breadcrumb title={"About Us"} /> */}
-
-      {/* About Area One */}
-      <AboutAreaOne />
-
-      {/* FAQ Area One */}
+      
+      <AboutArea/>
+      {/* FAQ Area */}
       <FaqArea />
 
-      {/* Team Area One */}
-      <TeamAreaOne />
+      {/* Work Process */}
+      <WorkProcess />
 
-      {/* Counter Area One */}
-      <CounterAreaOne />
-
-      {/* Work Process One */}
-      <WorkProcessOne />
-
-      {/* Footer One */}
+      {/* Footer */}
       <FooterOne />
     </>
   );

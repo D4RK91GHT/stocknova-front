@@ -2,12 +2,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import Team from "./pages/Team";
 import Login from "./pages/Login";
 import Logout from "./pages/Logout";
 
 import Register from "./pages/Register";
-import TeamDetails from "./pages/TeamDetails";
 
 import Dashboard from "./pages/Dashboard";
 import Stocks from "./pages/Stocks";
@@ -39,8 +37,6 @@ function App() {
 
         <Route exact path='/about' element={<About />} />
         <Route exact path='/contact' element={<Contact />} />
-        <Route exact path='/team' element={<Team />} />
-        <Route exact path='/team-details' element={<TeamDetails />} />
 
         <Route exact path='/dashboard' element={<Dashboard />} />
         <Route exact path='/stocks' element={<Stocks />} />

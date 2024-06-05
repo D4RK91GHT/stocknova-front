@@ -61,17 +61,6 @@ const Navbar = () => {
                 <Link to="/">Home</Link>
               </li>
 
-              <li className="menu-item-has-children">
-                <a href="#">Pages</a>
-                <ul className="sub-menu">
-                  <li>
-                    <Link to="/team">Team</Link>
-                  </li>
-                  <li>
-                    <Link to="/team-details">Team Details</Link>
-                  </li>
-                </ul>
-              </li>
               <li>
                 <Link to="/about">About Us</Link>
               </li>
